@@ -212,7 +212,7 @@
 .ender2 {
     grid-area: ender2;
     background-image: url(../img/ender2pro2.jpg);
-    width: 43rem;
+    width: 40rem;
     height: 24rem;
     border: #023e8a 1px solid;
     margin: 1rem;
@@ -224,7 +224,7 @@
 .ender3v2 {
     grid-area: ender3v2;
     background-image: url(../img/ender-3-V2-02.jpg);
-    width: 43rem;
+    width: 40rem;
     height: 24rem;
     border: #023e8a 1px solid;
     margin: 1rem;
@@ -235,7 +235,7 @@
 .cr10 {
     grid-area: cr10;
     background-image: url(../img/creality-cr-10-smart-pro-2.jpg);
-    width: 43rem;
+    width: 40rem;
     height: 24rem;
     border: #023e8a 1px solid;
     margin: 1rem;
@@ -250,7 +250,7 @@
     background-image: url(../img/cr5pro2.jpg);
     background-repeat: no-repeat;
     background-color: white;
-    width: 43rem;
+    width: 40rem;
     height: 24rem;
     border: #023e8a 1px solid;
     margin: 1rem;
