@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "section1"
+        "section2"
+        "footer";
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+    /* grid-template-rows: 0.5fr 0.5fr 1fr 1fr 0.5fr, auto; */
+    gap: 0px 0px;
+    grid-template-areas:
+        "header header"
+        "titulo titulo"
+        "ender2 ender3v2"
+        "cr10 cr5"
+        "footer footer";
+    justify-items: center;
+   
+}
+
+.nav {
+    margin: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.menu {
+    display: flex;
+    margin-bottom: 0px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-size: 1.2rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu a {
+
+    color: #0096c7;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+.menu a:hover {
+    color: #023e8a;
+    font-weight: 900;
+}
+
+.menu li {
+    list-style: none;
+    padding: 1rem;
+    display: flex;
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.header h1 {
+    color: #0096c7;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+}
+
+.logo {
+    transition: all 0.5s;
+    justify-content: center;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to top, #1d3557, #3f84e4);
+    justify-content: center;
+    width: 100%;
+}
+
+.main {
+    background-image: url(../img/wallpaperbetter.jpg);
+    background-size: cover;
+}
+
+.section1 {
+    grid-area: section1;
+    display: flex;
+    font-size: 3rem;
+    background-image: url(../img/fondoInicio.jpg);
+    height: 50vh;
+    width: 100vw;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section1,
+.section2 p {
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-shadow: 2px 2px 0 black;
+}
+
+.section2 {
+    grid-area: section2;
+    display: flex;
+    font-size: 3rem;
+    background-image: url(../img/fondoInicio2.jpg);
+    height: 50vh;
+    width: 100vw;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menuFooter a {
+
+    color: #0096c7;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+
+}
+
+.menuFooter a:hover {
+    color: #023e8a;
+    font-weight: 900;
+}
+
+.menuFooter li {
+    list-style: none;
+    padding: 1rem;
+    display: inline-block;
+}
+
+.nosotros{
+    display: flex;
+    border: #023e8a 1rem solid ;
+    margin: 6rem; 
+    margin-bottom: 6rem; 
+    margin-top: 3rem; 
+    border-radius: 1rem; 
+    padding: 6rem; 
+    justify-content: center;
+    color: #1b4174;    
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size:2rem;
+    flex-direction: column;
+    align-content: center;
+    background-color: rgb(163, 204, 238);
+}
+
+.products h3 {
+    color: black;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    margin-top: 2rem;
+}
+
+.products p {
+    color: black;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 15px;
+    width: 18rem;
+    height: 15rem;
+    margin: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+
+}
+
+.ender2 {
+    grid-area: ender2;
+    background-image: url(../img/ender2pro2.jpg);
+    width: 43.5rem;
+    height: 24rem;
+    border: #023e8a 1px solid;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+
+}
+
+.ender3v2 {
+    grid-area: ender3v2;
+    background-image: url(../img/ender-3-V2-02.jpg);
+    width: 43.5rem;
+    height: 24rem;
+    border: #023e8a 1px solid;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.cr10 {
+    grid-area: cr10;
+    background-image: url(../img/creality-cr-10-smart-pro-2.jpg);
+    width: 43.5rem;
+    height: 24rem;
+    border: #023e8a 1px solid;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.cr5 {
+    grid-area: cr5;
+    background-image: url(../img/cr5pro2.jpg);
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 43.5rem;
+    height: 24rem;
+    border: #023e8a 1px solid;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.info {
+    color: black;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 15px;
+    margin: 25px;
+    margin-top: 35px;
+    text-decoration: none;
+}
+
+.info:hover {
+    color: #023e8a;
+    font-weight: 900;
+}
+
+.buttonComprar {
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 0 #0096c7;
+    background-color: #023e8a;
+    transition: all 0.2;
+}
+
+.buttonComprar a {
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.buttonComprar:hover {
+    transform: translateY(1px);
+    box-shadow: 0 2px 0 #0096c7;
+}
+.soporte{
+    display: flex;
+    background-color: whitesmoke;
+    flex-direction: row;
+    align-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.titulodescargas{
+    display: inline;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: whitesmoke;
+    width: 100vw;
+    text-align: center;
+}
+.titulodescargas h2{
+    color: #0096c7;
+    font-size: 2rem;
+    background-color: whitesmoke;
+}
+.titulodescargas p{
+    color: #0096c7;
+    font-size: 2rem;
+    background-color: whitesmoke;
+}
+.descargas{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem;
+    border: #1d3557 1px solid;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.descargas a{
+    color:black;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1rem;
+    margin: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.descargas h2{
+    color:black;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 25px;
+}
+.contacto{
+    display: flex;
+    background-color:whitesmoke;
+    justify-content: center;
+    
+}
+.infoContactos{
+    display: flex;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    margin: 50px;
+    padding: 15px;
+    color: #0096c7;   
+    
+} 
+.infoContactos li{
+    list-style: none;
+    padding: 10px;
+    
+}
+.infoContactos h3{
+    
+    margin: 10px;
+
+}
+.formulario{
+    display: flex;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    margin: 50px;
+    padding: 15px;
+    
+
+}
+.submit{
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 0 #0096c7;
+    background-color: #023e8a;
+    transition: all 0.2;
+    color: white;
+}
+.submit:hover{
+    transform: translateY(1px);
+    box-shadow: 0 2px 0 #0096c7;
+}
+.cajadetexto{
+    
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 10px;
+    border: black 1px solid;
+    padding-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .index {
+        grid-template-areas:
+            "header"
+            "section1"
+            "section2"
+            "footer";
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .menu {
+        font-size: 1rem;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .marca {
+        justify-content: center;
+    }
+
+    .section1,
+    .section2 {
+        font-size: 2rem;
+    }
+    .nosotros{
+        font-size: 1rem;
+        padding: 1rem;
+        
+    }
+    .infoContactos{
+        padding: 0;
+        margin: 0;
+    }
+    .formulario{
+        padding: 1rem;
+        margin: 3rem;
+    }
+
+    
+}
+
+@media (max-width: 425px) {
+    .index {
+        grid-template-areas:
+            "header"
+            "section1"
+            "section2"
+            "footer";
+    }
+
+    .header {
+        flex-direction: column;
+        font-size: 1rem;
+    }
+
+    .nav {
+        justify-content: center;
+    }
+
+    .menu {
+        font-size: 0.8rem;
+
+    }
+
+    .menu li {
+        padding: 0.3rem;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .marca {
+        justify-content: center;
+
+    }
+    .products{
+        grid-template-columns: 0.5fr;
+        grid-template-areas:
+        "header"
+        "titulo"
+        "ender2"
+        "ender3v2"
+        "cr10"
+        "cr5"
+        "footer";
+        
+    }
+    
+
+    .section1,
+    .section2 {
+        font-size: 1.5rem;
+    }
+
+    .menuFooter {
+        font-size: 0.8rem;
+    }
+
+    .menuFooter li {
+        padding: 0.5rem;
+    }
+    .nosotros{
+        font-size: 1rem;
+        margin: 3rem; 
+        margin-bottom: 3rem; 
+        margin-top: 1rem; 
+        padding: 1rem;
+        border: none;
+    }
+    .titulodescargas h2{
+        font-size: 1.5rem;
+    }
+    .titulodescargas p{
+        font-size: 1rem;
+    }
+    .contacto{
+        flex-direction: column;
+        align-items: center;
+    }
+    .infoContactos{
+        padding: 0;
+        margin: 0;
+    }
+    .formulario{
+        padding: 1rem;
+        margin: 3rem;
+    }
+
+}
