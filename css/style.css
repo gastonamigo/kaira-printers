@@ -101,7 +101,7 @@
     font-size: 1.5rem;
     background-image: linear-gradient(to top, #1d3557, #3f84e4);
     justify-content: center;
-    width: 100%;
+    width:100%;
 }
 
 .main {
@@ -212,19 +212,19 @@
 .ender2 {
     grid-area: ender2;
     background-image: url(../img/ender2pro2.jpg);
-    width: 40rem;
+    width: 42rem;
     height: 24rem;
     border: #023e8a 1px solid;
     margin: 1rem;
-    border-radius: 1rem;
+     border-radius: 1rem; 
     padding: 1rem;
-
+    
 }
 
 .ender3v2 {
     grid-area: ender3v2;
     background-image: url(../img/ender-3-V2-02.jpg);
-    width: 40rem;
+    width: 42rem;
     height: 24rem;
     border: #023e8a 1px solid;
     margin: 1rem;
@@ -235,7 +235,7 @@
 .cr10 {
     grid-area: cr10;
     background-image: url(../img/creality-cr-10-smart-pro-2.jpg);
-    width: 40rem;
+    width: 42rem;
     height: 24rem;
     border: #023e8a 1px solid;
     margin: 1rem;
@@ -250,7 +250,7 @@
     background-image: url(../img/cr5pro2.jpg);
     background-repeat: no-repeat;
     background-color: white;
-    width: 40rem;
+    width: 42rem;
     height: 24rem;
     border: #023e8a 1px solid;
     margin: 1rem;
