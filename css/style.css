@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -17,9 +17,7 @@
 
 .products {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
-    /* grid-template-rows: 0.5fr 0.5fr 1fr 1fr 0.5fr, auto; */
-    gap: 0px 0px;
+    grid-template-columns: 2, 0.5fr;
     grid-template-areas:
         "header header"
         "titulo titulo"
@@ -30,16 +28,9 @@
    
 }
 
-.nav {
-    margin: 0;
-    margin-bottom: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: flex-start;
-}
 
-.menu {
+
+.nav-item {
     display: flex;
     margin-bottom: 0px;
     font-family: "M PLUS Rounded 1c", sans-serif;
@@ -49,7 +40,7 @@
     justify-content: flex-end;
 }
 
-.menu a {
+.nav-item a {
 
     color: #0096c7;
     text-transform: uppercase;
@@ -57,15 +48,9 @@
 
 }
 
-.menu a:hover {
+.nav-item a:hover {
     color: #023e8a;
     font-weight: 900;
-}
-
-.menu li {
-    list-style: none;
-    padding: 1rem;
-    display: flex;
 }
 
 .header {
@@ -76,12 +61,15 @@
     background-color: white;
 }
 
-.header h1 {
+.brand {
     color: #0096c7;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     display: flex;
     font-size: 2rem;
     align-items: center;
+}
+.brand:hover{
+    color:#5a91df;
 }
 
 .logo {
@@ -115,7 +103,7 @@
     font-size: 3rem;
     background-image: url(../img/fondoInicio.jpg);
     height: 50vh;
-    width: 100vw;
+    width: 100%;
     background-size: cover;
     text-align: center;
     justify-content: center;
@@ -127,8 +115,8 @@
 
 .section1,
 .section2 p {
-    color: white;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #d0ebf5;
+    font-family: 'Audiowide', cursive;
     text-shadow: 2px 2px 0 black;
 }
 
@@ -138,11 +126,12 @@
     font-size: 3rem;
     background-image: url(../img/fondoInicio2.jpg);
     height: 50vh;
-    width: 100vw;
+    width: 100%;
     background-size: cover;
     text-align: center;
     justify-content: center;
     align-items: center;
+   
 }
 
 .footer {
