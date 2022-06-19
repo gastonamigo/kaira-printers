@@ -155,7 +155,7 @@
     display: flex;
     border: #023e8a 1rem solid ;
     margin: 6rem; 
-    margin-bottom: 6rem; 
+    margin-bottom: 1rem; 
     margin-top: 3rem; 
     border-radius: 1rem; 
     padding: 6rem; 
@@ -163,8 +163,6 @@
     color: #1b4174;    
     font-family: 'M PLUS Rounded 1c', sans-serif;
     font-size:2rem;
-    flex-direction: column;
-    align-content: center;
     background-color: rgb(163, 204, 238);
 }
 
@@ -174,22 +172,14 @@
     font-family: 'M PLUS Rounded 1c', sans-serif;
     
 }
-
-
 .card {
     
     border: #023e8a 1px solid;
     margin: 1rem;
     border-radius: 1rem; 
     padding: 1rem;
-    background-color: white;
-    
-    
+    background-color: white;    
 }
-
-
-
-
 .buttonComprar {
     padding: 8px;
     border: none;
@@ -261,22 +251,20 @@
 }
 .infoContactos{
     display: flex;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 350px;
-    height: 400px;
     margin: 50px;
     padding: 15px;
     color: #0096c7;   
     
 } 
+
 .infoContactos li{
     list-style: none;
-    padding: 10px;
+    padding: 1rem;
     
 }
 .infoContactos h3{
@@ -285,24 +273,18 @@
 
 }
 .formulario{
-    display: flex;
     font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 20px;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
-    width: 350px;
-    height: 400px;
-    margin: 50px;
-    padding: 15px;
     
-
+   
 }
 .submit{
-    padding: 8px;
+    padding: .5rem;
     border: none;
-    border-radius: 10px;
+    border-radius: 1rem;
     box-shadow: 0 2px 0 #0096c7;
     background-color: #023e8a;
     transition: all 0.2;
@@ -311,15 +293,6 @@
 .submit:hover{
     transform: translateY(1px);
     box-shadow: 0 2px 0 #0096c7;
-}
-.cajadetexto{
-    
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 18px;
-    margin: 5px;
-    border-radius: 10px;
-    border: black 1px solid;
-    padding-left: 5px;
 }
 
 @media (max-width: 768px) {

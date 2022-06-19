@@ -16,7 +16,7 @@
 <body>
     <!-- HEADER: Encabezado -->
     <header class="header">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="logo" href="./index.html"><img src="./img/logo1.png" alt="logo"></a>
                 <a class="navbar-brand brand" href="./index.html">Kaira Printers</a>
@@ -50,8 +50,8 @@
     </header>
 
     <main>
-        <!-- get informacion no sencible Post informacion encriptada -->
-        <div class="contacto">
+        
+        <div class="contacto m-4">
             <section class="infoContactos">
                 <h3>Kaira Printers</h3>
                 <ul>
@@ -63,16 +63,56 @@
 
             </section>
             <section class="formulario">
-                <form action="#" method="post">
-                    <input class="cajadetexto" type="text" placeholder="Nombre y Apellido">
-                    <input class="cajadetexto" type="text" placeholder="Provincia">
-                    <input class="cajadetexto" type="email" placeholder="Email">
-                    <input class="cajadetexto" type="number" placeholder="Telefono">
-                    <textarea class="cajadetexto" placeholder="Consulta" name="" id="" cols="30" rows="10"></textarea>
-                    <br>
-                    <input class="submit" type="submit">
-
-                </form>
+                <form class="mt-5 ms-4">
+                    
+                    <div class="row">
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form6Example1" class="form-control" />
+                          <label class="form-label" for="form6Example1">Nombre</label>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form6Example2" class="form-control" />
+                          <label class="form-label" for="form6Example2">Apellido</label>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <!-- Text input -->
+                    <div class="form-outline">
+                      <input type="text" id="form6Example3" class="form-control" />
+                      <label class="form-label" for="form6Example3">Empresa</label>
+                    </div>
+                  
+                    <!-- Text input -->
+                    <div class="form-outline">
+                      <input type="text" id="form6Example4" class="form-control" />
+                      <label class="form-label" for="form6Example4">Direccion</label>
+                    </div>
+                  
+                    <!-- Email input -->
+                    <div class="form-outline">
+                      <input type="email" id="form6Example5" class="form-control" />
+                      <label class="form-label" for="form6Example5">Email</label>
+                    </div>
+                  
+                    <!-- Number input -->
+                    <div class="form-outline">
+                      <input type="number" id="form6Example6" class="form-control" />
+                      <label class="form-label" for="form6Example6">Telefono</label>
+                    </div>
+                  
+                    <!-- Message input -->
+                    <div class="form-outline">
+                      <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+                      <label class="form-label" for="form6Example7">Consulta</label>
+                    </div>
+                  
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block mb-4 submit">Enviar</button>
+                  </form>
             </section>
         </div>
     </main>
