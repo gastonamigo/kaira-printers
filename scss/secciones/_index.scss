@@ -1,0 +1,38 @@
+.section1 {
+    grid-area: section1;
+    display: flex;
+    font-size: 3rem;
+    background-image: url(../img/fondoInicio.jpg);
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+
+    p {
+        color: #d0ebf5;
+        font-family: 'Audiowide', cursive;
+        text-shadow: 2px 2px 0 black;
+    }
+}
+.section2 {
+    grid-area: section2;
+    display: flex;
+    font-size: 3rem;
+    background-image: url(../img/fondoInicio2.jpg);
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   
+    p {
+        color: #d0ebf5;
+        font-family: 'Audiowide', cursive;
+        text-shadow: 2px 2px 0 black;
+    }   
+}

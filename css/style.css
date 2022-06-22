@@ -1,255 +1,125 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
-.index {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "header"
-        "section1"
-        "section2"
-        "footer";
-}
-
-.fondo{
-    background-image: linear-gradient(180deg, rgba(61, 100, 155, 0.61) 0%, rgba(63,132,228,0.6895133053221288) 50%, rgba(186,210,242,0.7567401960784313) 100%);
-    
-}
-
-.nav-item {
+.header {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%; }
+  .header .nav-item {
     display: flex;
     margin-bottom: 0px;
     font-family: "M PLUS Rounded 1c", sans-serif;
     font-size: 1.2rem;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
-}
-
-.nav-item a {
-
-    color: #0096c7;
-    text-transform: uppercase;
-    text-decoration: none;
-
-}
-
-.nav-item a:hover {
-    color: #023e8a;
-    font-weight: 900;
-}
-
-.header {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background-color: white;
-    width: 100%;
-}
-
-.brand {
+    justify-content: flex-end; }
+    .header .nav-item a {
+      color: #0096c7;
+      text-transform: uppercase;
+      text-decoration: none; }
+      .header .nav-item a:hover {
+        color: #023e8a;
+        font-weight: 900; }
+  .header .logo {
+    transition: all 0.5s;
+    justify-content: center; }
+    .header .logo:hover {
+      transform: scale(1.1); }
+  .header .brand {
     color: #0096c7;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     display: flex;
     font-size: 2rem;
-    align-items: center;
-}
-.brand:hover{
-    color:#5a91df;
-}
-
-.logo {
-    transition: all 0.5s;
-    justify-content: center;
-}
-
-.logo:hover {
-    transform: scale(1.1);
-}
-
-.titulo {
-    grid-area: titulo;
-    display: flex;
-    color: white;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 1.5rem;
-    background-image: linear-gradient(to top, #1d3557, #3f84e4);
-    justify-content: center;
-    width:100%;
-}
-
-.main {
-    background-image: url(../img/wallpaperbetter.jpg);
-    background-size: cover;
-}
+    align-items: center; }
+    .header .brand:hover {
+      color: #5a91df; }
 
 .section1 {
-    grid-area: section1;
-    display: flex;
-    font-size: 3rem;
-    background-image: url(../img/fondoInicio.jpg);
-    height: 50vh;
-    width: 100%;
-    background-size: cover;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.section1,
-.section2 p {
+  grid-area: section1;
+  display: flex;
+  font-size: 3rem;
+  background-image: url(../img/fondoInicio.jpg);
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center; }
+  .section1 p {
     color: #d0ebf5;
     font-family: 'Audiowide', cursive;
-    text-shadow: 2px 2px 0 black;
-}
+    text-shadow: 2px 2px 0 black; }
 
 .section2 {
-    grid-area: section2;
-    display: flex;
-    font-size: 3rem;
-    background-image: url(../img/fondoInicio2.jpg);
-    height: 50vh;
-    width: 100%;
-    background-size: cover;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-   
-}
+  grid-area: section2;
+  display: flex;
+  font-size: 3rem;
+  background-image: url(../img/fondoInicio2.jpg);
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center; }
+  .section2 p {
+    color: #d0ebf5;
+    font-family: 'Audiowide', cursive;
+    text-shadow: 2px 2px 0 black; }
 
 .footer {
-    grid-area: footer;
-    display: flex;
-    justify-content: center;
-
-}
-
-.menuFooter a {
-
+  display: flex;
+  justify-content: center; }
+  .footer .menuFooter a {
     color: #0096c7;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: "M PLUS Rounded 1c", sans-serif;
-
-}
-
-.menuFooter a:hover {
-    color: #023e8a;
-    font-weight: 900;
-}
-
-.menuFooter li {
+    font-family: "M PLUS Rounded 1c", sans-serif; }
+    .footer .menuFooter a:hover {
+      color: #023e8a;
+      font-weight: 900; }
+  .footer .menuFooter li {
     list-style: none;
     padding: 1rem;
-    display: inline-block;
-}
+    display: inline-block; }
 
-.nosotros{
-    display: flex;
-    border: #023e8a 1rem solid ;
-    margin: 6rem; 
-    margin-bottom: 1rem; 
-    margin-top: 3rem; 
-    border-radius: 1rem; 
-    padding: 6rem; 
-    justify-content: center;
-    color: #1b4174;    
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size:2rem;
-    background-color: rgb(163, 204, 238);
-}
-
-
-.card-body p {
-    color: black;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    
-}
 .card {
-    
-    border: #023e8a 1px solid;
-    margin: 1rem;
-    border-radius: 1rem; 
-    padding: 1rem;
-    background-color: white;    
-}
-.buttonComprar {
+  border: #023e8a 1px solid;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: white; }
+  .card .card-body p {
+    color: black;
+    font-family: 'M PLUS Rounded 1c', sans-serif; }
+  .card .card-body .buttonComprar {
     padding: 8px;
     border: none;
     border-radius: 10px;
     box-shadow: 0 2px 0 #0096c7;
     background-color: #023e8a;
-    transition: all 0.2;
-}
+    transition: all 0.2; }
+    .card .card-body .buttonComprar a {
+      color: white;
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      font-size: 15px;
+      text-transform: uppercase;
+      text-decoration: none; }
+    .card .card-body .buttonComprar:hover {
+      transform: translateY(1px);
+      box-shadow: 0 2px 0 #0096c7; }
 
-.buttonComprar a {
-    color: white;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 15px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.buttonComprar:hover {
-    transform: translateY(1px);
-    box-shadow: 0 2px 0 #0096c7;
-}
-
-.titulodescargas{
-    display: inline;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    background-color: whitesmoke;
-    width: 100vw;
-    text-align: center;
-}
-.titulodescargas h2{
-    color: #0096c7;
-    font-size: 2rem;
-    background-color: whitesmoke;
-}
-.titulodescargas p{
-    color: #0096c7;
-    font-size: 2rem;
-
-}
-.descargas{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 2rem;
-    border: #1d3557 1px solid;
-    border-radius: 5px;
-    padding: 1rem;
-    background-color: white;
-
-}
-.descargas a{
-    color:black;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 1rem;
-    margin: 5px;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-.descargas h2{
-    color:black;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    font-size: 25px;
-}
-.contacto{
-    display: flex;
-    background-color:whitesmoke;
-    justify-content: center;
-    
-}
-.infoContactos{
+.contacto {
+  display: flex;
+  background-color: whitesmoke;
+  justify-content: center; }
+  .contacto .infoContactos {
     display: flex;
     font-size: 1rem;
     flex-direction: column;
@@ -258,181 +128,64 @@
     align-items: center;
     margin: 50px;
     padding: 15px;
-    color: #0096c7;   
-    
-} 
+    color: #0096c7; }
+    .contacto .infoContactos li {
+      list-style: none;
+      padding: 1rem; }
+    .contacto .infoContactos h3 {
+      margin: 10px; }
+  .contacto .formulario {
+    font-family: 'M PLUS Rounded 1c', sans-serif; }
+    .contacto .formulario .submit {
+      padding: .5rem;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 2px 0 #0096c7;
+      background-color: #023e8a;
+      transition: all 0.2;
+      color: white; }
+      .contacto .formulario .submit:hover {
+        transform: translateY(1px);
+        box-shadow: 0 2px 0 #0096c7; }
 
-.infoContactos li{
-    list-style: none;
-    padding: 1rem;
-    
-}
-.infoContactos h3{
-    
-    margin: 10px;
+.titulo {
+  grid-area: titulo;
+  display: flex;
+  color: white;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to top, #1d3557, #3f84e4);
+  justify-content: center;
+  width: 100%; }
 
-}
-.formulario{
-    font-family: 'M PLUS Rounded 1c', sans-serif;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    
-   
-}
-.submit{
-    padding: .5rem;
-    border: none;
-    border-radius: 1rem;
-    box-shadow: 0 2px 0 #0096c7;
-    background-color: #023e8a;
-    transition: all 0.2;
-    color: white;
-}
-.submit:hover{
-    transform: translateY(1px);
-    box-shadow: 0 2px 0 #0096c7;
-}
+.titulodescargas {
+  display: inline;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  background-color: whitesmoke;
+  width: 100vw;
+  text-align: center; }
+  .titulodescargas h2 {
+    color: #0096c7;
+    font-size: 2rem;
+    background-color: whitesmoke; }
+  .titulodescargas p {
+    color: #0096c7;
+    font-size: 2rem; }
 
-@media (max-width: 768px) {
-    .index {
-        grid-template-areas:
-            "header"
-            "section1"
-            "section2"
-            "footer";
-    }
+.nosotros {
+  display: flex;
+  border: #023e8a 1rem solid;
+  margin: 6rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  padding: 6rem;
+  justify-content: center;
+  color: #1b4174;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 2rem;
+  background-color: #a3ccee; }
 
-    .header {
-        flex-direction: column;
-    }
-
-    .nav {
-        justify-content: center;
-    }
-
-    .menu {
-        font-size: 1rem;
-    }
-
-    .logo {
-        display: flex;
-        justify-content: center;
-    }
-
-    .marca {
-        justify-content: center;
-    }
-
-    .section1,
-    .section2 {
-        font-size: 2rem;
-    }
-    .nosotros{
-        font-size: 1rem;
-        padding: 1rem;
-        
-    }
-    .infoContactos{
-        padding: 0;
-        margin: 0;
-    }
-    .formulario{
-        padding: 1rem;
-        margin: 3rem;
-    }
-
-    
-}
-
-@media (max-width: 425px) {
-    .index {
-        grid-template-areas:
-            "header"
-            "section1"
-            "section2"
-            "footer";
-    }
-
-    .header {
-        flex-direction: column;
-        font-size: 1rem;
-    }
-
-    .nav {
-        justify-content: center;
-    }
-
-    .menu {
-        font-size: 0.8rem;
-
-    }
-
-    .menu li {
-        padding: 0.3rem;
-    }
-
-    .logo {
-        display: flex;
-        justify-content: center;
-    }
-
-    .marca {
-        justify-content: center;
-
-    }
-    .products{
-        grid-template-columns: 0.5fr;
-        grid-template-areas:
-        "header"
-        "titulo"
-        "ender2"
-        "ender3v2"
-        "cr10"
-        "cr5"
-        "footer";
-        
-    }
-    
-
-    .section1,
-    .section2 {
-        font-size: 1.5rem;
-    }
-
-    .menuFooter {
-        font-size: 0.8rem;
-    }
-
-    .menuFooter li {
-        padding: 0.5rem;
-    }
-    .nosotros{
-        font-size: 1rem;
-        margin: 3rem; 
-        margin-bottom: 3rem; 
-        margin-top: 1rem; 
-        padding: 1rem;
-        border: none;
-    }
-    .titulodescargas h2{
-        font-size: 1.5rem;
-    }
-    .titulodescargas p{
-        font-size: 1rem;
-    }
-    .contacto{
-        flex-direction: column;
-        align-items: center;
-    }
-    .infoContactos{
-        padding: 0;
-        margin: 0;
-    }
-    .formulario{
-        padding: 1rem;
-        margin: 3rem;
-    }
-
-}
+.main {
+  background-image: url(../img/wallpaperbetter.jpg);
+  background-size: cover; }

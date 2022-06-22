@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+@import'./variables/colores';
+@import'./secciones/header';
+@import'./secciones/index';
+@import'./secciones/footer';
+@import'./secciones/tarjetas';
+@import'./secciones/contacto';
+
+// titulo productos
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    color: white;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size: 1.5rem;
+    background-image: linear-gradient(to top, #1d3557, #3f84e4);
+    justify-content: center;
+    width: 100%;
+}
+
+.titulodescargas {
+    display: inline;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    background-color: whitesmoke;
+    width: 100vw;
+    text-align: center;
+
+    h2 {
+        color: $celeste;
+        font-size: 2rem;
+        background-color: whitesmoke;
+    }
+
+    p {
+        color: $celeste;
+        font-size: 2rem;
+    }
+}
+.nosotros{
+    display: flex;
+    border: $azul 1rem solid ;
+    margin: 6rem; 
+    margin-bottom: 1rem; 
+    margin-top: 3rem; 
+    border-radius: 1rem; 
+    padding: 6rem; 
+    justify-content: center;
+    color: #1b4174;    
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-size:2rem;
+    background-color: rgb(163, 204, 238);
+}
+.main {
+    background-image: url(../img/wallpaperbetter.jpg);
+    background-size: cover;
+}
