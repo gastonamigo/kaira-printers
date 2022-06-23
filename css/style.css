@@ -1,8 +1,37 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 * {
   margin: 0;
   padding: 0; }
+
+.card .card-body .buttonComprar, .contacto .formulario .submit {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 0 #0096c7;
+  background-color: #023e8a;
+  transition: all 0.2;
+  color: white;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 15px;
+  text-decoration: none; }
+  .card .card-body .buttonComprar:hover, .contacto .formulario .submit:hover {
+    transform: translateY(1px);
+    box-shadow: 0 2px 0 #0096c7; }
+
+.section1, .section2 {
+  display: flex;
+  font-size: 3rem;
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  color: #d0ebf5;
+  font-family: "Baloo 2", cursive;
+  text-shadow: 2px 2px 0 black; }
 
 .header {
   display: flex;
@@ -40,38 +69,10 @@
       color: #5a91df; }
 
 .section1 {
-  grid-area: section1;
-  display: flex;
-  font-size: 3rem;
-  background-image: url(../img/fondoInicio.jpg);
-  height: 50vh;
-  width: 100%;
-  background-size: cover;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
-  align-items: center; }
-  .section1 p {
-    color: #d0ebf5;
-    font-family: 'Audiowide', cursive;
-    text-shadow: 2px 2px 0 black; }
+  background-image: url(../img/fondoInicio.jpg); }
 
 .section2 {
-  grid-area: section2;
-  display: flex;
-  font-size: 3rem;
-  background-image: url(../img/fondoInicio2.jpg);
-  height: 50vh;
-  width: 100%;
-  background-size: cover;
-  text-align: center;
-  justify-content: center;
-  align-items: center; }
-  .section2 p {
-    color: #d0ebf5;
-    font-family: 'Audiowide', cursive;
-    text-shadow: 2px 2px 0 black; }
+  background-image: url(../img/fondoInicio2.jpg); }
 
 .footer {
   display: flex;
@@ -95,25 +96,10 @@
   border-radius: 1rem;
   padding: 1rem;
   background-color: white; }
-  .card .card-body p {
-    color: black;
-    font-family: 'M PLUS Rounded 1c', sans-serif; }
-  .card .card-body .buttonComprar {
-    padding: 8px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0 2px 0 #0096c7;
-    background-color: #023e8a;
-    transition: all 0.2; }
-    .card .card-body .buttonComprar a {
-      color: white;
-      font-family: 'M PLUS Rounded 1c', sans-serif;
-      font-size: 15px;
-      text-transform: uppercase;
-      text-decoration: none; }
-    .card .card-body .buttonComprar:hover {
-      transform: translateY(1px);
-      box-shadow: 0 2px 0 #0096c7; }
+  .card .card-body {
+    font-family: "Baloo 2", cursive; }
+    .card .card-body .buttonComprar {
+      padding: 8px; }
 
 .contacto {
   display: flex;
@@ -137,16 +123,7 @@
   .contacto .formulario {
     font-family: 'M PLUS Rounded 1c', sans-serif; }
     .contacto .formulario .submit {
-      padding: .5rem;
-      border: none;
-      border-radius: 1rem;
-      box-shadow: 0 2px 0 #0096c7;
-      background-color: #023e8a;
-      transition: all 0.2;
-      color: white; }
-      .contacto .formulario .submit:hover {
-        transform: translateY(1px);
-        box-shadow: 0 2px 0 #0096c7; }
+      padding: .5rem; }
 
 .titulo {
   grid-area: titulo;
@@ -162,7 +139,7 @@
   display: inline;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   background-color: whitesmoke;
-  width: 100vw;
+  width: 100%;
   text-align: center; }
   .titulodescargas h2 {
     color: #0096c7;
@@ -189,3 +166,31 @@
 .main {
   background-image: url(../img/wallpaperbetter.jpg);
   background-size: cover; }
+
+@media (max-width: 768px) {
+  .section1,
+  .section2 {
+    font-size: 1.7rem; } }
+
+.nosotros {
+  padding: 3rem;
+  margin: 3rem;
+  border: #023e8a 0.5rem solid; }
+  .nosotros p {
+    font-size: 1.5rem; }
+
+@media (max-width: 425px) {
+  .section1,
+  .section2 {
+    font-size: 1.5rem; }
+  .titulodescargas {
+    font-size: 0.5rem; }
+  .nosotros {
+    padding: 2rem;
+    margin: 2rem;
+    border: #023e8a 0.2rem solid; }
+    .nosotros p {
+      font-size: 1rem; }
+  .contacto {
+    flex-direction: column;
+    align-items: center; } }

@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');
+
 
 * {
     margin: 0;
     padding: 0;
 }
 @import'./variables/colores';
+@import'./variables/tipografia';
+@import'./variables/extend';
+
 @import'./secciones/header';
 @import'./secciones/index';
 @import'./secciones/footer';
@@ -28,7 +30,7 @@
     display: inline;
     font-family: 'M PLUS Rounded 1c', sans-serif;
     background-color: whitesmoke;
-    width: 100vw;
+    width: 100%;
     text-align: center;
 
     h2 {
@@ -60,3 +62,40 @@
     background-image: url(../img/wallpaperbetter.jpg);
     background-size: cover;
 }
+@media (max-width: 768px){
+    .section1,
+    .section2 {
+        font-size: 1.7rem;
+    }
+}
+.nosotros{
+    padding: 3rem;
+    margin: 3rem;
+    border: $azul .5rem solid ;
+    p{
+    font-size: 1.5rem;
+    }
+}
+  
+  @media (max-width: 425px) {
+    .section1,
+    .section2 {
+        font-size: 1.5rem;
+    }
+    .titulodescargas{
+      font-size: 0.5rem;
+    }
+    .nosotros{
+        padding: 2rem;
+        margin: 2rem;
+        border: $azul .2rem solid ;
+        p{
+        font-size: 1rem;
+        }
+    }
+    .contacto{
+      flex-direction: column;
+      align-items: center;
+    }
+}
+  
