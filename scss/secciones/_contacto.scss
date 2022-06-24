@@ -2,6 +2,7 @@
     display: flex;
     background-color: whitesmoke;
     justify-content: center;
+   
 
     .infoContactos {
         display: flex;
@@ -13,13 +14,17 @@
         margin: 50px;
         padding: 15px;
         color: $celeste;
+        font-family: $redondeada;
+        ul{
+            padding: 0;
+        }
 
         li {
             list-style: none;
             padding: 1rem;
         }
 
-        h3 {
+        h1 {
             margin: 10px;
         }
     }

@@ -114,11 +114,14 @@
     align-items: center;
     margin: 50px;
     padding: 15px;
-    color: #0096c7; }
+    color: #0096c7;
+    font-family: "M PLUS Rounded 1c", sans-serif; }
+    .contacto .infoContactos ul {
+      padding: 0; }
     .contacto .infoContactos li {
       list-style: none;
       padding: 1rem; }
-    .contacto .infoContactos h3 {
+    .contacto .infoContactos h1 {
       margin: 10px; }
   .contacto .formulario {
     font-family: 'M PLUS Rounded 1c', sans-serif; }
@@ -141,7 +144,7 @@
   background-color: whitesmoke;
   width: 100%;
   text-align: center; }
-  .titulodescargas h2 {
+  .titulodescargas h1 {
     color: #0096c7;
     font-size: 2rem;
     background-color: whitesmoke; }
