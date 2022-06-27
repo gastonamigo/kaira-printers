@@ -129,12 +129,11 @@
       padding: .5rem; }
 
 .titulo {
-  grid-area: titulo;
   display: flex;
+  background-image: linear-gradient(to top, #023e8a, #0096c7);
   color: white;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 1.5rem;
-  background-image: linear-gradient(to top, #1d3557, #3f84e4);
   justify-content: center;
   width: 100%; }
 
@@ -145,10 +144,13 @@
   width: 100%;
   text-align: center; }
   .titulodescargas h1 {
-    color: #0096c7;
-    font-size: 2rem;
-    background-color: whitesmoke; }
+    background-image: linear-gradient(to top, #023e8a, #0096c7);
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0; }
   .titulodescargas p {
+    background-image: linear-gradient(to top, rgba(180, 177, 177, 0.281), rgba(128, 128, 128, 0.26));
     color: #0096c7;
     font-size: 2rem; }
 
@@ -173,21 +175,22 @@
 @media (max-width: 768px) {
   .section1,
   .section2 {
-    font-size: 1.7rem; } }
-
-.nosotros {
-  padding: 3rem;
-  margin: 3rem;
-  border: #023e8a 0.5rem solid; }
-  .nosotros p {
-    font-size: 1.5rem; }
+    font-size: 1.7rem; }
+  .nosotros {
+    padding: 3rem;
+    margin: 3rem;
+    border: #023e8a 0.5rem solid; }
+    .nosotros p {
+      font-size: 1.5rem; }
+  .titulodescargas h1, .titulodescargas p {
+    font-size: 1.5rem; } }
 
 @media (max-width: 425px) {
   .section1,
   .section2 {
     font-size: 1.5rem; }
-  .titulodescargas {
-    font-size: 0.5rem; }
+  .titulodescargas h1, .titulodescargas p {
+    font-size: 1.5rem; }
   .nosotros {
     padding: 2rem;
     margin: 2rem;
