@@ -40,7 +40,7 @@
     }
 
     p {
-        @include colorTitulos(rgba(180, 177, 177, 0.281),rgba(128, 128, 128, 0.26),$celeste);
+        @include colorTitulos(rgba(180, 177, 177, 0.993),rgb(128, 128, 128),white);
         font-size: 2rem;
     }
 }
@@ -59,8 +59,14 @@
     background-color: rgb(163, 204, 238);
 }
 .main {
-    background-image: url(../img/wallpaperbetter.jpg);
+    background-image: url(../img/fondoabstracto.jpg);
     background-size: cover;
+    
+}
+.mainSoporte {
+    background-image: url(../img/fondoabstracto2.jpg);
+    background-size: cover;
+    
 }
 @media (max-width: 768px){
     .section1,

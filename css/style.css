@@ -150,8 +150,8 @@
     padding-bottom: 0.5rem;
     margin-bottom: 0; }
   .titulodescargas p {
-    background-image: linear-gradient(to top, rgba(180, 177, 177, 0.281), rgba(128, 128, 128, 0.26));
-    color: #0096c7;
+    background-image: linear-gradient(to top, rgba(180, 177, 177, 0.993), gray);
+    color: white;
     font-size: 2rem; }
 
 .nosotros {
@@ -169,7 +169,11 @@
   background-color: #a3ccee; }
 
 .main {
-  background-image: url(../img/wallpaperbetter.jpg);
+  background-image: url(../img/fondoabstracto.jpg);
+  background-size: cover; }
+
+.mainSoporte {
+  background-image: url(../img/fondoabstracto2.jpg);
   background-size: cover; }
 
 @media (max-width: 768px) {
