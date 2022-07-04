@@ -186,14 +186,18 @@
     border: #023e8a 0.5rem solid; }
     .nosotros p {
       font-size: 1.5rem; }
-  .titulodescargas h1, .titulodescargas p {
+  .titulodescargas h1,
+  .titulodescargas p {
     font-size: 1.5rem; } }
 
 @media (max-width: 425px) {
+  .header .brand {
+    font-size: 1.5rem; }
   .section1,
   .section2 {
     font-size: 1.5rem; }
-  .titulodescargas h1, .titulodescargas p {
+  .titulodescargas h1,
+  .titulodescargas p {
     font-size: 1.5rem; }
   .nosotros {
     padding: 2rem;
@@ -203,4 +207,10 @@
       font-size: 1rem; }
   .contacto {
     flex-direction: column;
-    align-items: center; } }
+    align-items: center; }
+  .footer ul {
+    padding: .5rem; }
+  .footer .menuFooter a {
+    font-size: 0.8rem; }
+  .footer .menuFooter li {
+    padding: .1rem; } }
