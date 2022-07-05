@@ -170,7 +170,12 @@
 
 .main {
   background-image: url(../img/fondoabstracto.jpg);
-  background-size: cover; }
+  background-size: cover;
+  min-height: 85vh; }
+
+.mainContacto {
+  min-height: 80vh;
+  background-color: whitesmoke; }
 
 .mainSoporte {
   background-image: url(../img/fondoabstracto2.jpg);
